@@ -1,0 +1,8 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.income,
+.expense{
+  display: inline-block;
+  width: 200px;
+}

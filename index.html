@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div>Finance Tracker</div>
+    <div class="js-greeting"></div>
+    <div class="js-current-balance"></div>
+    
+    <div class="income">
+      <p>Income:</p>
+      <input class="js-income-amount" type="number">
+      <input class="js-income-description" type="text" placeholder="description">
+      <button class="js-add-income-button">Add</button>
+    </div>
+    <div class="expense">
+      <p>expenses:</p>
+      <input class="js-expense-amount" type="number">
+      <input class="js-expense-description" type="text" placeholder="description">
+
+      <button class="js-add-expense-button">Add</button>
+    </div>
+    <div>
+      <button onclick="renderAllIncome();">View All Income</button>
+      <button onclick="renderAllExpense();">View All Expenses</button>
+    </div>
+    <div class="js-view-income-expense">
+      <div class="js-render-income-expense"></div>
+    </div>
+    <script src="./financeTracker.js"></script>
+    <button class="js-reset-button" onclick="reset();">reset</button>
+  </body>
+</html>
